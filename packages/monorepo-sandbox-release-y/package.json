@@ -1,15 +1,15 @@
 {
-  "name": "@azu/monorepo-sandbox-release-y",
+  "name": "@kozakdenys/monorepo-sandbox-release-y",
   "version": "1.10.0",
   "description": "[example] y is package",
   "repository": {
     "type": "git",
-    "url": "https://github.com/azu/monorepo-github-releases.git",
+    "url": "https://github.com/kozakdenys/monorepo-github-releases.git",
     "directory": "packages/monorepo-sandbox-release-y"
   },
-  "homepage": "https://github.com/azu/monorepo-sandbox/tree/master/packages/monorepo-sandbox-y#readme",
+  "homepage": "https://github.com/kozakdenys/monorepo-sandbox/tree/master/packages/monorepo-sandbox-y#readme",
   "license": "MIT",
-  "author": "azu <azuciao@gmail.com>",
+  "author": "kozakdenys <kozakdenysciao@gmail.com>",
   "files": [
     "lib"
   ],

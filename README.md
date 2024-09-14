@@ -15,20 +15,20 @@ UseCase:
 
 Steps:
 
-1. Create Release PR via dispatching [.github/workflows/create-release-pr.yml](https://github.com/azu/monorepo-github-releases/actions/workflows/create-release-pr.yml)
+1. Create Release PR via dispatching [.github/workflows/create-release-pr.yml](https://github.com/kozakdenys/monorepo-github-releases/actions/workflows/create-release-pr.yml)
    - You can select new version with semver(patch,minor,major)
    - ![Create Release Pull Request Image](./create-release-pr.png)
 2. [CI] Create Release PR
    - Update `lerna.json`'s `version` and `packages/*/package.json`'s `version`
    - Fill the Pull Request body with [Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)
-   - e.g. https://github.com/azu/monorepo-github-releases/pull/18
+   - e.g. https://github.com/kozakdenys/monorepo-github-releases/pull/18
 3. Review Release PR
     - You can modify PR body
 4. Merge Release PR
 5. [CI] Publish new version to npm and GitHub Release
     - The release note content is same to PR body
     - CI copy to release note from PR body when merge the PR
-    - e.g. https://github.com/azu/monorepo-github-releases/releases/tag/v1.6.3
+    - e.g. https://github.com/kozakdenys/monorepo-github-releases/releases/tag/v1.6.3
 
 > **Warning**
 > If the publishing(Step 5) is failed, you can re-run the workflow, or You can move to Pattern A-5.
@@ -46,7 +46,7 @@ UseCase:
 Steps:
 
 0. [Optional] You can commit to fix broken packages
-1. Dispatch [.github/workflows/release.yml](https://github.com/azu/monorepo-github-releases/actions/workflows/release.yml) workflow
+1. Dispatch [.github/workflows/release.yml](https://github.com/kozakdenys/monorepo-github-releases/actions/workflows/release.yml) workflow
 2. [CI] Publish new version to npm and create new GitHub Release if not published yet
    - The release note content is [Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes) by default
 
@@ -87,13 +87,13 @@ This command do next steps:
 
 if you want to use this release flow, you can use [migration script](./migrate.sh).
 
-    curl -fsSL https://raw.githubusercontent.com/azu/monorepo-github-releases/main/migrate.sh | bash
+    curl -fsSL https://raw.githubusercontent.com/kozakdenys/monorepo-github-releases/main/migrate.sh | bash
 
 This migration script support a single npm package and lerna.
 
 ## Changelog
 
-See [Releases page](https://github.com/azu/monorepo-sandbox/releases).
+See [Releases page](https://github.com/kozakdenys/monorepo-sandbox/releases).
 
 ## Develop
 
@@ -108,9 +108,9 @@ So, You need to change each `packages/*/package.json` after fork this repository
 
 ## Related
 
-- [azu/github-label-setup: 📦 Setup GitHub label without configuration.](https://github.com/azu/github-label-setup)
+- [kozakdenys/github-label-setup: 📦 Setup GitHub label without configuration.](https://github.com/kozakdenys/github-label-setup)
   - This monorepo use this label set for [Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)
-- [azu/lerna-monorepo-github-actions-release: Lerna + monorepo +GitHub Actions Release Flow](https://github.com/azu/lerna-monorepo-github-actions-release)
+- [kozakdenys/lerna-monorepo-github-actions-release: Lerna + monorepo +GitHub Actions Release Flow](https://github.com/kozakdenys/lerna-monorepo-github-actions-release)
   - lerna + conventional commit release flow with GitHub Actions
 
 ## Contributing
@@ -125,9 +125,9 @@ Pull requests and stars are always welcome!
 
 ## Author
 
-- [github/azu](https://github.com/azu)
-- [twitter/azu_re](https://twitter.com/azu_re)
+- [github/kozakdenys](https://github.com/kozakdenys)
+- [twitter/kozakdenys_re](https://twitter.com/kozakdenys_re)
 
 ## License
 
-MIT © azu
+MIT © kozakdenys

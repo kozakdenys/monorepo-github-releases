@@ -1,22 +1,22 @@
 {
-  "name": "@azu/monorepo-sandbox-release-z",
+  "name": "@kozakdenys/monorepo-sandbox-release-z",
   "version": "1.10.0",
   "description": "[example] z is packages",
-  "homepage": "https://github.com/azu/monorepo-sandbox/tree/master/packages/monorepo-sandbox-z#readme",
+  "homepage": "https://github.com/kozakdenys/monorepo-sandbox/tree/master/packages/monorepo-sandbox-z#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/azu/monorepo-github-releases.git",
+    "url": "https://github.com/kozakdenys/monorepo-github-releases.git",
     "directory": "packages/monorepo-sandbox-release-z"
   },
   "license": "MIT",
-  "author": "azu <azuciao@gmail.com>",
+  "author": "kozakdenys <kozakdenysciao@gmail.com>",
   "files": [
     "lib"
   ],
   "main": "lib/monorepo-sandbox-z.js",
   "scripts": {},
   "dependencies": {
-    "@azu/monorepo-sandbox-release-y": "^1.10.0"
+    "@kozakdenys/monorepo-sandbox-release-y": "^1.10.0"
   },
   "publishConfig": {
     "access": "public",

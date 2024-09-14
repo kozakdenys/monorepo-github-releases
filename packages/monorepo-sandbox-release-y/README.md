@@ -1,4 +1,4 @@
-# `@azu/monorepo-sandbox-release-y`
+# `@kozakdenys/monorepo-sandbox-release-y`
 
 > TODO: description
 y
@@ -6,7 +6,7 @@ y
 ## Usage
 
 ```
-const monorepoSandboxY = require('@azu/monorepo-sandbox-release-y');
+const monorepoSandboxY = require('@kozakdenys/monorepo-sandbox-release-y');
 
 // TODO: DEMONSTRATE API
 ```
